@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BookTimeOff</string>
+    <string name="BookTimeOffButton">Book Time Off</string>
+    <string name="ViewHolidaysButton">View Booked Time Off</string>
+    <string name="WelcomeText">Welcome</string>
+    <string name="SelectOptionsText">Please Select Option:</string>
+    <string name="TimeOffReason">Reason For Booking Leave:</string>
+    <string name="dateFrom">From:</string>
+    <string name="dateTo">To:</string>
+    <string-array name="VacationTypes">
+        <item> Paid Vacation Time</item>
+        <item> Sick Leave </item>
+        <item> Unpaid Leave</item>
+    </string-array>
+</resources>

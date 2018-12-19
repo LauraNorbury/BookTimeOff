@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".HomeScreenActivity">
+
+    <Button
+        android:id="@+id/TimeSheetsButton"
+        android:layout_width="253dp"
+        android:layout_height="46dp"
+        android:onClick="timeSheetsButtonPressed"
+        android:text="TimeSheets"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeOffButton"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <Button
+        android:id="@+id/timeOffButton"
+        android:layout_width="251dp"
+        android:layout_height="45dp"
+        android:onClick="bookingTimeOffButtonPressed"
+        android:text="@string/BookTimeOffButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.173"
+        tools:text="@string/BookTimeOffButton" />
+
+    <Button
+        android:id="@+id/viewBookedTimeOffButton"
+        android:layout_width="253dp"
+        android:layout_height="46dp"
+        android:onClick="ViewTimeOffButtonPressed"
+        android:text="@string/ViewHolidaysButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeOffButton"
+        app:layout_constraintVertical_bias="0.23"
+        tools:text="@string/ViewHolidaysButton" />
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/WelcomeText"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeOffButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144"
+        tools:text="@string/WelcomeText" />
+
+    <TextView
+        android:id="@+id/selectOptionsText"
+        android:layout_width="170dp"
+        android:layout_height="28dp"
+        android:text="@string/SelectOptionsText"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/timeOffButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/splash" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:onClick="EditTimeOffButtonPressed"
+        android:text="Edit My Time Off"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.561" />
+
+</android.support.constraint.ConstraintLayout>
